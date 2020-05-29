@@ -31,6 +31,14 @@
 </template>
 
 <script>
+import axios from 'axios';
+
+axios.get('/api', {
+  params: {},
+}).then((res) => {
+  console.log(res);
+});
+
 export default {
   name: 'HelloWorld',
   props: {
